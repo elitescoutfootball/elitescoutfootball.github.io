@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Guidelines — EliteScout Football</title>
+<meta name="description" content="The rules for the Dugout and other community features of EliteScout Football.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1A1A1A;
+    --surface: #212029;
+    --line: #322F3D;
+    --purple: #7B2CBF;
+    --purple-light: #9D4EDD;
+    --text: #ECEAF3;
+    --muted: #9C99AC;
+    --maxw: 720px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 24px 80px;
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; }
+
+  /* Header */
+  header {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 8px;
+  }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .shield {
+    width: 30px; height: 34px;
+    flex: none;
+  }
+
+  .wordmark {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+  .wordmark span { color: var(--purple-light); }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--purple-light);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: clamp(34px, 7vw, 52px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .intro {
+    font-size: 17px;
+    color: var(--text);
+    margin: 40px 0 8px;
+  }
+
+  /* Sections */
+  section {
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .num {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--purple-light);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  p { margin-bottom: 14px; color: #D6D3E0; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { list-style: none; margin: 8px 0 0; }
+
+  li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 11px;
+    color: #D6D3E0;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 7px; height: 7px;
+    border-radius: 2px;
+    background: var(--purple);
+    transform: rotate(45deg);
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  a { color: var(--purple-light); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+  a:hover { border-bottom-color: var(--purple-light); }
+
+  /* Contact card */
+  .contact {
+    margin-top: 44px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 30px;
+  }
+  .contact h2 { font-size: 18px; margin-bottom: 14px; }
+  .contact p { font-size: 15px; margin-bottom: 4px; color: var(--muted); }
+  .contact .org { color: var(--text); font-weight: 600; }
+
+  footer {
+    margin-top: 48px;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  :focus-visible { outline: 2px solid var(--purple-light); outline-offset: 3px; border-radius: 2px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">
+      <svg class="shield" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 1L28 6V16C28 24.5 22.5 30.5 15 33C7.5 30.5 2 24.5 2 16V6L15 1Z" stroke="url(#g)" stroke-width="2" fill="rgba(123,44,191,0.12)"/>
+        <path d="M9 17L13.5 21.5L21 12" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="g" x1="2" y1="1" x2="28" y2="33" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9D4EDD"/>
+            <stop offset="1" stop-color="#7B2CBF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="wordmark">EliteScout<span> Football</span></span>
+    </div>
+    <p class="eyebrow">Community</p>
+    <h1>Community Guidelines</h1>
+    <p class="updated">Last updated: 13 June 2026</p>
+  </header>
+
+  <p class="intro">These Community Guidelines govern your use of the Dugout and any other feature of EliteScout Football ("ESF", "we", "us") that lets you post messages, team names, or other content that other users can see ("User Content"). By using any of these features, you agree to follow these Guidelines.</p>
+
+  <section>
+    <span class="num">01</span>
+    <h2>You are responsible for what you post</h2>
+    <p>You are solely responsible for the User Content you post. Only post content you have the right to share, and remember that other members of your league can see it.</p>
+  </section>
+
+  <section>
+    <span class="num">02</span>
+    <h2>Zero tolerance for objectionable content</h2>
+    <p>There is no tolerance for objectionable content or abusive behaviour on ESF. You must not post, share, or transmit content that:</p>
+    <ul>
+      <li>harasses, bullies, threatens, or intimidates any person;</li>
+      <li>is hateful or discriminatory on the basis of race, ethnicity, national origin, religion, disability, gender, age, sexual orientation, or gender identity;</li>
+      <li>is sexually explicit, obscene, or pornographic;</li>
+      <li>promotes or depicts violence, self-harm, or illegal activity;</li>
+      <li>is spam, advertising, a scam, or promotes gambling or betting services;</li>
+      <li>impersonates another person or misrepresents your affiliation with any person or organisation;</li>
+      <li>shares another person's private or identifying information without their consent;</li>
+      <li>infringes anyone's intellectual property or other rights; or</li>
+      <li>is otherwise unlawful or objectionable.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num">03</span>
+    <h2>Reporting and blocking</h2>
+    <p>If you see content that breaches these Guidelines, use the in-app <strong>Report</strong> option on the relevant message or user, or email us at <a href="mailto:legal@elitescoutfootball.com">legal@elitescoutfootball.com</a>. You can also <strong>block</strong> any user so that you no longer see their content.</p>
+  </section>
+
+  <section>
+    <span class="num">04</span>
+    <h2>How we respond</h2>
+    <p>We review reports of objectionable content and aim to act within 24 hours — removing the content and, where appropriate, suspending or permanently removing the user responsible. We may remove any User Content and suspend or terminate any account at our discretion, with or without notice, for any breach of these Guidelines.</p>
+  </section>
+
+  <section>
+    <span class="num">05</span>
+    <h2>No endorsement</h2>
+    <p>User Content reflects the views of the user who posted it, not those of ESF. We do not endorse, and are not responsible for, User Content posted by users.</p>
+  </section>
+
+  <section>
+    <span class="num">06</span>
+    <h2>Changes to these Guidelines</h2>
+    <p>We may update these Guidelines from time to time. We will indicate the date of the most recent change above. Your continued use of ESF after changes take effect means you accept the updated Guidelines.</p>
+  </section>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p class="org">EliteScout Football</p>
+    <p>PO Box 6075, Hammondville NSW 2170, Australia</p>
+    <p><a href="mailto:legal@elitescoutfootball.com">legal@elitescoutfootball.com</a></p>
+  </div>
+
+  <footer>© 2026 EliteScout Football</footer>
+</div>
+</body>
+</html>
