@@ -134,3 +134,48 @@ footer {
   color: var(--text-secondary);
   font-size: 13px;
 }
+
+/* Top navigation — shared across all pages. */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  margin: -64px -24px 24px;
+  padding: 10px 24px;
+  background: rgba(17, 17, 17, 0.92);
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.topnav-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+.topnav-link {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .15s, color .15s;
+}
+.topnav-link:hover {
+  color: var(--text);
+  background: rgba(123, 44, 191, 0.12);
+  text-decoration: none;
+}
+.topnav-link.is-active {
+  color: var(--purple-light);
+  background: rgba(123, 44, 191, 0.18);
+}
+@media (max-width: 520px) {
+  .topnav { padding: 8px 16px; margin: -64px -24px 16px; }
+  .topnav-inner { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 2px; }
+  .topnav-inner::-webkit-scrollbar { display: none; }
+}

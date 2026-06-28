@@ -150,11 +150,65 @@
 
   :focus-visible { outline: 2px solid var(--purple-light); outline-offset: 3px; border-radius: 2px; }
 
+  /* Top navigation */
+  .topnav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    margin: 0 -24px 24px;
+    padding: 10px 24px;
+    background: rgba(26, 26, 26, 0.92);
+    backdrop-filter: saturate(140%) blur(8px);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topnav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .topnav-link {
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 1px solid transparent !important;
+    transition: background .15s, color .15s;
+  }
+  .topnav-link:hover {
+    color: var(--text);
+    background: rgba(123, 44, 191, 0.12);
+  }
+  .topnav-link.is-active {
+    color: var(--purple-light);
+    background: rgba(123, 44, 191, 0.18);
+  }
+  @media (max-width: 520px) {
+    .topnav { padding: 8px 16px; }
+    .topnav-inner { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 2px; }
+    .topnav-inner::-webkit-scrollbar { display: none; }
+  }
+
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="topnav" aria-label="Primary">
+    <div class="topnav-inner">
+      <a class="topnav-link" href="/">Home</a>
+      <a class="topnav-link" href="/support">Support</a>
+      <a class="topnav-link" href="/community-guidelines">Community</a>
+      <a class="topnav-link is-active" href="/terms">Terms</a>
+      <a class="topnav-link" href="/delete-account">Delete Account</a>
+    </div>
+  </nav>
   <header>
     <div class="mark">
       <svg class="shield" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
