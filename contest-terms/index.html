@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contest Terms — EliteScout Football</title>
+<meta name="description" content="Terms and conditions for prize contests run by EliteScout Football inside the EliteScout Fantasy Football app. Free to enter, contests of skill.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="/nav.js" defer></script>
+<style>
+  :root {
+    --bg: #1A1A1A;
+    --surface: #212029;
+    --line: #322F3D;
+    --purple: #7B2CBF;
+    --purple-light: #9D4EDD;
+    --text: #ECEAF3;
+    --muted: #9C99AC;
+    --maxw: 720px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 24px 80px;
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; }
+
+  header {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 8px;
+  }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .shield { width: 30px; height: 34px; flex: none; }
+
+  .wordmark {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+  .wordmark span { color: var(--purple-light); }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--purple-light);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: clamp(34px, 7vw, 52px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .updated { font-size: 14px; color: var(--muted); }
+
+  .intro { font-size: 17px; color: var(--text); margin: 40px 0 8px; }
+
+  section {
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .num {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--purple-light);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 22px 0 10px;
+    color: var(--text);
+  }
+
+  p { margin-bottom: 14px; color: #D6D3E0; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { list-style: none; margin: 8px 0 0; }
+
+  li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 11px;
+    color: #D6D3E0;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 7px; height: 7px;
+    border-radius: 2px;
+    background: var(--purple);
+    transform: rotate(45deg);
+  }
+
+  ol {
+    margin: 8px 0 0;
+    padding-left: 22px;
+    color: #D6D3E0;
+  }
+  ol li { padding-left: 4px; }
+  ol li::before { content: none; }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  a { color: var(--purple-light); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+  a:hover { border-bottom-color: var(--purple-light); }
+
+  .schedule {
+    margin-top: 40px;
+    padding: 32px 0 8px;
+    border-top: 2px solid var(--line);
+  }
+  .schedule .eyebrow { margin-bottom: 10px; }
+  .schedule h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .schedule .kv { margin-bottom: 14px; }
+  .schedule .kv strong { display: inline; }
+
+  .contact {
+    margin-top: 44px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 30px;
+  }
+  .contact h2 { font-size: 18px; margin-bottom: 14px; }
+  .contact p { font-size: 15px; margin-bottom: 4px; color: var(--muted); }
+  .contact .org { color: var(--text); font-weight: 600; }
+
+  .signoff {
+    margin-top: 40px;
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 48px;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  :focus-visible { outline: 2px solid var(--purple-light); outline-offset: 3px; border-radius: 2px; }
+
+  /* Top navigation */
+  .topnav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    margin: 0 -24px 24px;
+    padding: 10px 24px;
+    background: rgba(26, 26, 26, 0.92);
+    backdrop-filter: saturate(140%) blur(8px);
+    -webkit-backdrop-filter: saturate(140%) blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topnav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .topnav-link {
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 1px solid transparent !important;
+    transition: background .15s, color .15s;
+  }
+  .topnav-link:hover {
+    color: var(--text);
+    background: rgba(123, 44, 191, 0.12);
+  }
+  .topnav-link.is-active {
+    color: var(--purple-light);
+    background: rgba(123, 44, 191, 0.18);
+  }
+  @media (max-width: 520px) {
+    .topnav { padding: 8px 16px; }
+    .topnav-inner { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 2px; }
+    .topnav-inner::-webkit-scrollbar { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav" aria-label="Primary">
+    <div class="topnav-inner">
+      <a class="topnav-link" href="/">Home</a>
+      <a class="topnav-link" href="/support">Support</a>
+      <a class="topnav-link" href="/community-guidelines">Community</a>
+      <a class="topnav-link" href="/terms">Terms</a>
+      <a class="topnav-link is-active" href="/contest-terms">Contest Terms</a>
+      <a class="topnav-link" href="/delete-account">Delete Account</a>
+    </div>
+  </nav>
+  <header>
+    <div class="mark">
+      <svg class="shield" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 1L28 6V16C28 24.5 22.5 30.5 15 33C7.5 30.5 2 24.5 2 16V6L15 1Z" stroke="url(#g)" stroke-width="2" fill="rgba(123,44,191,0.12)"/>
+        <path d="M9 17L13.5 21.5L21 12" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="g" x1="2" y1="1" x2="28" y2="33" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9D4EDD"/>
+            <stop offset="1" stop-color="#7B2CBF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="wordmark">EliteScout<span> Football</span></span>
+    </div>
+    <p class="eyebrow">Legal</p>
+    <h1>Contest Terms and Conditions</h1>
+    <p class="updated">Last updated: 29 July 2026</p>
+  </header>
+
+  <p class="intro">These Terms apply to all prize contests run by EliteScout Football within the EliteScout Fantasy Football app. Contest-specific details are set out in the Schedules below. The contest currently open is set out in Schedule A.</p>
+
+  <section>
+    <span class="num">01</span>
+    <h2>The Promoter</h2>
+    <p>These contests are run by EliteScout Football (the "Promoter"), a registered business name of Dylan Heffernan, sole trader (ABN 84 872 617 348).</p>
+    <p>Postal address: PO Box 6075, Hammondville NSW 2170, Australia<br>
+    Contact: <a href="mailto:legal@elitescoutfootball.com">legal@elitescoutfootball.com</a></p>
+  </section>
+
+  <section>
+    <span class="num">02</span>
+    <h2>Free to enter</h2>
+    <p><strong>No purchase is necessary to enter or to win any contest under these Terms.</strong></p>
+    <p>EliteScout Fantasy Football ("ESF") is free to download and free to play. No payment of any kind is required to enter, and no payment will improve a participant's chance of winning.</p>
+    <p>Where the Promoter offers paid features in the ESF app, those features do not affect scoring, standings, or a participant's chance of winning any contest. Free and paying participants compete on identical terms.</p>
+  </section>
+
+  <section>
+    <span class="num">03</span>
+    <h2>Eligibility</h2>
+    <p>Entry is open to individuals aged 13 years or over at the time of entry, consistent with the ESF app's minimum age.</p>
+    <p><strong>Participants under 18</strong> may enter and may win. However, a parent or legal guardian must claim the prize on the participant's behalf and must supply the delivery address (see clause 8). The Promoter will not accept delivery details directly from a participant under 18.</p>
+    <p>The following are not eligible to enter or win:</p>
+    <ul>
+      <li>The Promoter, and members of the Promoter's immediate family or household</li>
+      <li>Any person operating a test, staff, developer, automated, or bot account</li>
+      <li>Any person who holds or operates more than one ESF account</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num">04</span>
+    <h2>How to enter</h2>
+    <p>To enter a contest, a participant must:</p>
+    <ol>
+      <li>Hold a free ESF account with a registered squad for the relevant Premier League season; and</li>
+      <li>Meet the entry requirement set out in the relevant Schedule.</li>
+    </ol>
+    <p style="margin-top:14px">Entering constitutes acceptance of these Terms.</p>
+    <p><strong>One entry per person.</strong> Where the Promoter reasonably believes a person has entered more than once, whether via multiple accounts or otherwise, all of that person's entries may be disqualified.</p>
+  </section>
+
+  <section>
+    <span class="num">05</span>
+    <h2>Contests of skill</h2>
+    <p><strong>Each contest under these Terms is a contest of skill. Chance plays no part in determining any winner.</strong></p>
+    <p>Winners are determined solely by performance in the ESF app, measured as set out in the relevant Schedule. Where two or more participants are tied, the tiebreak rules in that Schedule apply in order.</p>
+    <p>The Promoter's determination of standings and winners is final, and no correspondence will be entered into.</p>
+  </section>
+
+  <section>
+    <span class="num">06</span>
+    <h2>Prizes generally</h2>
+    <p>The prize for each contest is set out in the relevant Schedule.</p>
+    <p>For all prizes:</p>
+    <ul>
+      <li>Prizes are not transferable and cannot be exchanged for cash</li>
+      <li>Prizes are subject to availability at the time of claim</li>
+      <li>Where the stated prize is unavailable, the Promoter will supply an alternative of equal or greater value</li>
+      <li>Stated prize values are in Australian dollars, inclusive of GST and exclusive of shipping</li>
+      <li>Shipping within the delivery area stated in the relevant Schedule is paid by the Promoter</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num">07</span>
+    <h2>Notification</h2>
+    <p>Winners will be notified in the ESF app and by email at the address associated with their ESF account, within seven (7) days of the end of the relevant contest period.</p>
+    <p>It is the participant's responsibility to keep a valid email address on their ESF account.</p>
+  </section>
+
+  <section>
+    <span class="num">08</span>
+    <h2>Claiming a prize</h2>
+    <p>To claim, the winner must reply within <strong>fourteen (14) days</strong> of notification with the details requested in the notification and a valid postal delivery address.</p>
+    <p>Where the winner is under 18, the claim must be submitted by a parent or legal guardian, who must confirm they consent to the prize being sent and provide the delivery address.</p>
+    <p>If no valid claim is received within fourteen (14) days, or the contact details held are invalid, the prize is forfeited and will be awarded to the next-placed eligible participant, applying the tiebreak rules in the relevant Schedule.</p>
+  </section>
+
+  <section>
+    <span class="num">09</span>
+    <h2>Delivery</h2>
+    <p>Prizes are dispatched either by the Promoter or by a third-party retailer directly to the address supplied.</p>
+    <p>Delivery timeframes depend on the carrier and destination and are not guaranteed by the Promoter. <strong>Any import duties, customs charges, or local taxes payable on delivery are the responsibility of the winner or, for winners under 18, the claiming parent or guardian.</strong></p>
+    <p>The Promoter is not responsible for prizes lost, delayed, or damaged in transit, or for delivery failures arising from an incorrect or incomplete address supplied at claim.</p>
+  </section>
+
+  <section>
+    <span class="num">10</span>
+    <h2>Privacy</h2>
+    <p>Personal information collected in connection with any contest is handled in accordance with the <a href="https://www.iubenda.com/privacy-policy/25225268/full-legal">ESF Privacy Policy</a>.</p>
+    <p>Delivery details are collected for the sole purpose of fulfilling the prize, are not used for marketing, and are not retained beyond what is necessary to complete delivery.</p>
+    <p>The Promoter may publish a winner's ESF display name and team name in the app and on its channels. Postal addresses and email addresses are never published. A winner under 18 will be identified by display name only.</p>
+  </section>
+
+  <section>
+    <span class="num">11</span>
+    <h2>Conduct and disqualification</h2>
+    <p>The Promoter may disqualify any participant who, in its reasonable opinion:</p>
+    <ul>
+      <li>Uses multiple accounts, automated tools, or scripts</li>
+      <li>Interferes with the operation of a contest or the ESF app</li>
+      <li>Engages in abusive, fraudulent, or manipulative conduct</li>
+      <li>Breaches the ESF Terms of Service or Community Guidelines</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num">12</span>
+    <h2>Changes and cancellation</h2>
+    <p>The Promoter will not change the eligibility criteria, entry period, method of determining the winner, or advertised prize of a contest that is already open, except where required by law or where the contest cannot be completed as planned for reasons outside the Promoter's reasonable control, including technical failure, unavailability of official match data, or the suspension or curtailment of the Premier League season.</p>
+    <p>Where a season or month is curtailed, the winner will be determined on the standings as at the last completed gameweek.</p>
+    <p>The Promoter may add, amend, or discontinue future contests at any time. Any such change takes effect only for contests that have not yet opened.</p>
+  </section>
+
+  <section>
+    <span class="num">13</span>
+    <h2>Liability</h2>
+    <p>To the extent permitted by law, the Promoter is not liable for any loss or damage arising out of participation in a contest or the acceptance or use of a prize.</p>
+    <p>Nothing in these Terms excludes, restricts, or modifies any right or remedy under the Australian Consumer Law that cannot lawfully be excluded, restricted, or modified.</p>
+  </section>
+
+  <section>
+    <span class="num">14</span>
+    <h2>Independence</h2>
+    <p>These contests are in no way sponsored, endorsed, administered by, or associated with Meta, Instagram, Facebook, TikTok, Reddit, X, Apple, or Google. Participants release those platforms from all liability in connection with these contests.</p>
+    <p>EliteScout Fantasy Football is an independent product and is not affiliated with, endorsed by, or associated with the Premier League, Football Association Premier League Limited, or any Premier League club. Club and competition names are used descriptively only.</p>
+  </section>
+
+  <section>
+    <span class="num">15</span>
+    <h2>Governing law</h2>
+    <p>These Terms are governed by the laws of New South Wales, Australia. Participants submit to the non-exclusive jurisdiction of the courts of that state.</p>
+  </section>
+
+  <div class="schedule">
+    <p class="eyebrow">Schedule A</p>
+    <h2>Season Head-to-Head Contest</h2>
+
+    <p class="kv"><strong>Entry requirement:</strong> Join the official contest league, "[LEAGUE NAME]", using league code <strong>[LEAGUE CODE]</strong>.</p>
+
+    <p class="kv"><strong>Entries open:</strong> 30 July 2026</p>
+
+    <p class="kv"><strong>Entries close:</strong> At the kickoff of the first match of Gameweek 1, being <strong>5:00am Saturday 22 August 2026 AEST</strong>. Squads joining after this time may participate in the league but are not eligible for the prize, as head-to-head fixtures are generated at the close of entries.</p>
+
+    <p class="kv"><strong>Contest period:</strong> The full 2026/27 Premier League season, concluding at the completion of the final gameweek in May 2027.</p>
+
+    <p class="kv"><strong>How the winner is determined:</strong> The participant placed first on the head-to-head standings of the official contest league at the conclusion of the final gameweek.</p>
+
+    <h3>Tiebreak, applied in order:</h3>
+    <ol>
+      <li>Highest total ESF score across the season</li>
+      <li>Result of the head-to-head fixture(s) between the tied participants</li>
+      <li>Earliest entry into the official contest league</li>
+    </ol>
+
+    <h3>Prize:</h3>
+    <p>One (1) official replica Premier League club shirt of the winner's choice, subject to:</p>
+    <ul>
+      <li>Current-season replica shirt (home or away) of a club competing in the Premier League at the time of claim</li>
+      <li>Standard replica version only. Authentic, player-issue, and match-worn versions are not included</li>
+      <li>Name and number printing, patches, and other customisation are not included</li>
+      <li>Maximum value <strong>A$200</strong></li>
+      <li>Subject to availability in the winner's requested size</li>
+    </ul>
+
+    <p class="kv" style="margin-top:22px"><strong>Delivery area:</strong> Worldwide.</p>
+
+    <p class="kv"><strong>Claim details required:</strong> Club, home or away, and size.</p>
+  </div>
+
+  <p class="signoff">By entering any contest, you confirm that you have read, understood, and agree to these Terms and Conditions.</p>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p class="org">EliteScout Football</p>
+    <p>PO Box 6075, Hammondville NSW 2170, Australia</p>
+    <p><a href="mailto:legal@elitescoutfootball.com">legal@elitescoutfootball.com</a></p>
+  </div>
+
+  <footer>© 2026 EliteScout Football</footer>
+</div>
+</body>
+</html>
