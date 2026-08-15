@@ -419,13 +419,73 @@ body.landing .topnav { margin: 0; }
 .score-icon {
   width: 40px; height: 40px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #7B2CBF, #9D4EDD);
-  color: #fff;
+  background: rgba(123, 44, 191, 0.18);
+  border: 1px solid rgba(157, 78, 221, 0.35);
   display: flex; align-items: center; justify-content: center;
-  font-weight: 800; font-size: 12px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 8px 24px rgba(123, 44, 191, 0.35);
+  font-size: 22px;
+  line-height: 1;
   flex-shrink: 0;
+}
+
+/* ---- Rare Pick Bonus card (full-width feature) ---- */
+.score-card.rare-pick {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  background:
+    linear-gradient(135deg, rgba(123, 44, 191, 0.22) 0%, rgba(157, 78, 221, 0.06) 60%),
+    var(--surface);
+  border-color: rgba(157, 78, 221, 0.4);
+  padding: 26px 26px 24px;
+}
+.rare-pick .score-card-head {
+  padding-bottom: 16px;
+  gap: 14px;
+}
+.rare-pick .score-card-head h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.rare-pick-icon {
+  background: rgba(157, 78, 221, 0.28);
+  border-color: rgba(224, 170, 255, 0.5);
+}
+.rare-pick-tag {
+  margin-left: auto;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--purple-light);
+  font-weight: 700;
+}
+.rare-pick-desc {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+  max-width: 720px;
+}
+.tier-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.tier {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.tier-label { display: flex; flex-direction: column; gap: 2px; }
+.tier-label b { font-size: 14px; font-weight: 800; color: var(--text); letter-spacing: 0.2px; }
+.tier-label span { font-size: 13px; color: var(--text-secondary); }
+.tier-points { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
+@media (max-width: 700px) {
+  .tier-row { grid-template-columns: 1fr; }
+  .rare-pick-tag { display: none; }
 }
 .score-list { list-style: none; padding: 0; margin: 0; }
 .score-list li {
@@ -444,16 +504,6 @@ body.landing .topnav { margin: 0; }
 }
 .score-list .pos { color: #7cd992; }
 .score-list .neg { color: #ff7676; }
-.scoring-footnote {
-  margin: 32px auto 0;
-  max-width: 620px;
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 15px;
-  line-height: 1.55;
-}
-.scoring-footnote b { color: var(--text); font-weight: 700; }
-
 /* ---------- Feature strip ---------- */
 .features { padding: 64px 24px; border-bottom: 1px solid var(--border); }
 .features-inner {
