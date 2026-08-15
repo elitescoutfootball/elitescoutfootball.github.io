@@ -361,6 +361,86 @@ body.landing .topnav { margin: 0; }
   .hero-shot { max-width: 420px; margin: 0 auto; }
 }
 
+/* ---------- Scoring breakdown ---------- */
+.scoring {
+  padding: 72px 24px 80px;
+  background:
+    radial-gradient(1000px 400px at 50% 0%, rgba(123, 44, 191, 0.10), transparent 60%),
+    var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.scoring-inner { max-width: 1120px; margin: 0 auto; }
+.scoring-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: var(--purple-light);
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.scoring-title {
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  text-align: center;
+  margin: 0 0 44px;
+  line-height: 1.1;
+}
+.scoring-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.score-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+}
+.score-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.score-card-head h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+.score-icon { font-size: 20px; line-height: 1; }
+.score-list { list-style: none; padding: 0; margin: 0; }
+.score-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 7px 0;
+  font-size: 15px;
+  color: var(--text);
+}
+.score-list li span { color: #cfcfcf; }
+.score-list li b {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+}
+.score-list .pos { color: #7cd992; }
+.score-list .neg { color: #ff7676; }
+.scoring-footnote {
+  margin: 32px auto 0;
+  max-width: 620px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.scoring-footnote b { color: var(--text); font-weight: 700; }
+
 /* ---------- Feature strip ---------- */
 .features { padding: 64px 24px; border-bottom: 1px solid var(--border); }
 .features-inner {
